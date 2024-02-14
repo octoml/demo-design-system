@@ -25,6 +25,9 @@ footer {
       &.with-icon a {
         @apply flex items-center justify-center gap-2;
       }
+      &.multilink {
+        @apply flex flex-nowrap gap-1 m-auto;
+      }
     }
   }
 }
