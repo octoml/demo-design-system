@@ -52,6 +52,7 @@ All commit messages are linted using [Husky](https://typicode.github.io/husky/) 
 
 **Semantic Release** Automated versioning and releasing
 
+- The CI will build all styles before releasing.
 - Create a Pull Request (PR) with Conventional Commit messages.
 - PR approval triggers an automatic version release.
 - Release notes are generated from commit messages.
