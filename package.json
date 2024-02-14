@@ -1,7 +1,6 @@
 {
   "name": "demo-design-system",
   "version": "0.1.0",
-  "private": true,
   "author": "Chai Landau <clandau@octo.ai>",
   "description": "OctoAI Demo Design System",
   "license": "ISC",
