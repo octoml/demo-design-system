@@ -4,6 +4,7 @@
   "author": "Chai Landau <clandau@octo.ai>",
   "description": "OctoAI Demo Design System",
   "license": "ISC",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
