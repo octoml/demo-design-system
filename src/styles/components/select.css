@@ -1,0 +1,13 @@
+.select {
+  & > button {
+    @apply bg-gray-50 border border-gray-300 rounded flex items-center gap-3;
+    &:hover,
+    &:focus-visible {
+      @apply border-gray-500 bg-gray-50 bg-none outline-none;
+    }
+  }
+}
+
+.select-list {
+  @apply bg-gray-50 border border-gray-300 rounded w-[var(--trigger-width)] px-4  py-9px;
+}
