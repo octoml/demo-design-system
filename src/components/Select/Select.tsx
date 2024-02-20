@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   Button,
   Label,
@@ -8,9 +9,18 @@ import {
   SelectValue,
 } from "react-aria-components";
 
-const Select = () => (
-  <ReactAriaSelect className="select">
-    <Label>Title</Label>
+interface listItem {
+  value: string;
+  label: string;
+}
+interface SelectProps {
+  listTitle?: string;
+  listItems: listItem[];
+}
+
+const Select: FC<SelectProps> = ({ listTitle, listItems }) => (
+  <ReactAriaSelect className="select" defaultSelectedKey={"2024"}>
+    {listTitle && <Label>{listTitle}</Label>}
     <Button>
       <SelectValue />
       <span aria-hidden="true" className="icon">
@@ -19,12 +29,9 @@ const Select = () => (
     </Button>
     <Popover className="select-list">
       <ListBox>
-        <ListBoxItem>Aardvark</ListBoxItem>
-        <ListBoxItem>Cat</ListBoxItem>
-        <ListBoxItem>Dog</ListBoxItem>
-        <ListBoxItem>Kangaroo</ListBoxItem>
-        <ListBoxItem>Panda</ListBoxItem>
-        <ListBoxItem>Snake</ListBoxItem>
+        {listItems?.map((item) => (
+          <ListBoxItem id={item?.value}>{item?.label}</ListBoxItem>
+        ))}
       </ListBox>
     </Popover>
   </ReactAriaSelect>

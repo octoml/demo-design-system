@@ -1,13 +1,40 @@
 .select {
+  @apply flex gap-3 items-center;
+  .react-aria-Label {
+    @apply text-gray-500 font-normal dark:text-gray-50;
+  }
   & > button {
-    @apply bg-gray-50 border border-gray-300 rounded flex items-center gap-3;
-    &:hover,
-    &:focus-visible {
-      @apply border-gray-500 bg-gray-50 bg-none outline-none;
+    @apply bg-gray-50 border border-gray-300 rounded flex items-center justify-between gap-3 w-[100px] dark:bg-opacity-5 dark:border-gray-600 shadow-light dark:shadow-dark dark:text-white;
+    &[data-hovered],
+    &[data-focused] {
+      @apply border-gray-500 bg-gray-50 dark:bg-opacity-5 bg-none outline-none dark:border-gray-300;
+    }
+
+    .icon img {
+      @apply w-3;
     }
   }
 }
 
 .select-list {
-  @apply bg-gray-50 border border-gray-300 rounded w-[var(--trigger-width)] px-4  py-9px;
+  @apply bg-gray-50 border border-gray-300 rounded w-[var(--trigger-width)] dark:bg-opacity-5 dark:border-gray-600 shadow-light dark:shadow-dark;
+  &[data-hovered],
+  &[data-focused] {
+    @apply outline-none;
+  }
+  .react-aria-ListBoxItem {
+    @apply px-4 py-9px relative;
+
+    &[data-hovered],
+    &[data-focused] {
+      @apply outline-none;
+    }
+    &[data-hovered],
+    &[data-focus-visible] {
+      @apply bg-gray-200 dark:bg-opacity-10 cursor-pointer;
+    }
+    &[data-selected] {
+      @apply after:bg-[url('/icons/check.svg')] after:block after:w-4 after:h-4 after:absolute after:right-3 after:top-[calc(50%-8px)] after:bg-no-repeat;
+    }
+  }
 }
