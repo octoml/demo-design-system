@@ -13,7 +13,7 @@ git clone https://github.com/octoml/demo-design-system.git
 Navigate to the design system folder
 
 ```bash
-cd cd demo-design-system
+cd demo-design-system
 ```
 
 Install dependencies
