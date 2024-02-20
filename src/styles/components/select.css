@@ -1,0 +1,40 @@
+.select {
+  @apply flex items-center gap-3;
+  .react-aria-Label {
+    @apply font-normal text-gray-500 dark:text-gray-50;
+  }
+  & > button {
+    @apply flex w-[100px] items-center justify-between gap-3 rounded border border-gray-300 bg-gray-50 shadow-light dark:border-gray-600 dark:bg-opacity-5 dark:text-white dark:shadow-dark;
+    &[data-hovered],
+    &[data-focused] {
+      @apply border-gray-500 bg-gray-50 bg-none outline-none dark:border-gray-300 dark:bg-opacity-5;
+    }
+
+    .icon img {
+      @apply w-3;
+    }
+  }
+}
+
+.select-list {
+  @apply w-[var(--trigger-width)] rounded border border-gray-300 bg-gray-50 shadow-light dark:border-gray-600 dark:bg-opacity-5 dark:shadow-dark;
+  &[data-hovered],
+  &[data-focused] {
+    @apply outline-none;
+  }
+  .react-aria-ListBoxItem {
+    @apply relative px-4 py-9px;
+
+    &[data-hovered],
+    &[data-focused] {
+      @apply outline-none;
+    }
+    &[data-hovered],
+    &[data-focus-visible] {
+      @apply cursor-pointer bg-gray-200 dark:bg-opacity-10;
+    }
+    &[data-selected] {
+      @apply after:absolute after:right-3 after:top-[calc(50%-8px)] after:block after:h-4 after:w-4 after:bg-[url('/icons/check.svg')] after:bg-no-repeat;
+    }
+  }
+}
