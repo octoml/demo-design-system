@@ -67,6 +67,7 @@ const theme: Config = {
         "font-size": "font-size",
         spacing: "margin, padding, gap",
         sizing: "height, width",
+        filter: "filter",
       },
       invert: {
         "77": ".77",
