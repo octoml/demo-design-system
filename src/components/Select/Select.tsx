@@ -10,17 +10,21 @@ import {
 } from "react-aria-components";
 
 interface listItem {
+  /** List item value (used for key) */
   value: string;
+  /** List item label */
   label: string;
 }
 interface SelectProps {
-  listTitle?: string;
+  /** Select field label */
+  label?: string;
+  /** Select field list items */
   listItems: listItem[];
 }
 
-const Select: FC<SelectProps> = ({ listTitle, listItems }) => (
+const Select: FC<SelectProps> = ({ label, listItems }) => (
   <ReactAriaSelect className="select" defaultSelectedKey={"2024"}>
-    {listTitle && <Label>{listTitle}</Label>}
+    {label && <Label>{label}</Label>}
     <Button>
       <SelectValue />
       <span aria-hidden="true" className="icon">

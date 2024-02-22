@@ -1,0 +1,38 @@
+.card {
+  @apply justify-between max-w-[700px] bg-gray-50 border border-gray-300 rounded px-6 py-4 dark:bg-gray-900 dark:border-gray-600;
+  &,
+  .info {
+    @apply flex items-center;
+  }
+  .info {
+    @apply gap-3;
+  }
+  &.model-card {
+    .icon {
+      @apply h-7 w-7 rounded-full border border-gray-300 p-[3px] dark:border-gray-600;
+    }
+    p {
+      @apply flex;
+    }
+    p > span {
+      &:first-child {
+        @apply text-gray-600 font-medium dark:text-gray-300 mr-1;
+      }
+      &:last-child {
+        @apply text-black-600 font-semibold dark:text-gray-100 ml-1;
+      }
+    }
+  }
+  a {
+    @apply m-[-14px] p-[14px];
+    img {
+      @apply transition-filter dark:invert-100 brightness-0 contrast-[25%];
+    }
+    &:hover,
+    &:focus-visible {
+      img {
+        @apply brightness-0 contrast-100;
+      }
+    }
+  }
+}
