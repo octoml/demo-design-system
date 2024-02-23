@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-interface ModelCardProps {
+export interface ModelCardProps {
   /** Image url for model icon */
   icon: string;
   /** Model modelAuthor */

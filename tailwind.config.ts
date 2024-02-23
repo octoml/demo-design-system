@@ -63,6 +63,9 @@ const theme: Config = {
       spacing: {
         "9px": "0.5625rem",
       },
+      screens: {
+        xs: "500px",
+      },
       transitionProperty: {
         "font-size": "font-size",
         spacing: "margin, padding, gap",

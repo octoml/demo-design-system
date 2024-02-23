@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import {
   Button,
@@ -25,6 +27,7 @@ interface SelectProps {
 const Select: FC<SelectProps> = ({ label, listItems }) => (
   <ReactAriaSelect className="select" defaultSelectedKey={"2024"}>
     {label && <Label>{label}</Label>}
+    
     <Button>
       <SelectValue />
       <span aria-hidden="true" className="icon">
@@ -34,7 +37,9 @@ const Select: FC<SelectProps> = ({ label, listItems }) => (
     <Popover className="select-list">
       <ListBox>
         {listItems?.map((item) => (
-          <ListBoxItem id={item?.value}>{item?.label}</ListBoxItem>
+          <ListBoxItem key={item.value} id={item?.value}>
+            {item?.label}
+          </ListBoxItem>
         ))}
       </ListBox>
     </Popover>

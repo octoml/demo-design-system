@@ -67,9 +67,12 @@ main.container {
       @apply pb-8;
     }
   }
+  &.wide {
+    @apply max-w-[1328px] px-8 xl:px-16;
+  }
 }
 
-button {
+.button {
   @apply mt-2 block w-auto rounded bg-gradient-orange from-orange to-orange px-4  py-9px shadow-light hover:bg-gradient-to-r focus-visible:bg-gradient-to-r dark:bg-gradient-teal dark:from-blue-500 dark:to-blue-500 dark:text-black-900 dark:shadow-dark dark:hover:bg-gradient-to-r sm:mt-0;
 }
 
@@ -91,4 +94,20 @@ input {
 
 .disclaimer {
   @apply italic;
+}
+
+#error-banner {
+  @apply container fixed bottom-0 left-0 w-full max-w-none z-50;
+  & > .content {
+    @apply relative mx-auto w-full max-w-[50rem] rounded border bg-orange px-4 py-3 pr-12;
+    button {
+      @apply flex transition-colors hover:fill-gray-700 absolute top-0 bottom-0 right-0 px-4 py-3 bg-none hover:bg-none shadow-transparent mt-0;
+    }
+  }
+}
+
+.heading {
+  span {
+    @apply bg-gradient-orange bg-clip-text !text-transparent dark:bg-gradient-teal;
+  }
 }

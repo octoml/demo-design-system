@@ -35,13 +35,5 @@
       @apply gap-6;
     }
   }
-  #error-banner {
-    @apply container fixed bottom-0 left-0 w-full max-w-none z-50;
-    & > .content {
-      @apply relative mx-auto w-full max-w-[50rem] rounded border bg-orange px-4 py-3 pr-12;
-      button {
-        @apply flex transition-colors hover:fill-gray-700;
-      }
-    }
-  }
+
 }
