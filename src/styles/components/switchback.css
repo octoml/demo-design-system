@@ -1,0 +1,15 @@
+.switchback {
+  @apply flex flex-col gap-3 mt-8 m-auto max-w-lg md:flex-row md:gap-6 md:max-w-screen-lg md:px-6;
+  & > div {
+    @apply w-full;
+  }
+  .heading {
+    @apply text-lg md:text-[40px] lg:text-xl transition-font-size;
+    br {
+      @apply min-[550px]:hidden md:block;
+    }
+  }
+  p {
+    @apply text-gray-700 dark:text-gray-200;
+  }
+}

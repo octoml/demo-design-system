@@ -4,10 +4,22 @@ header {
     @apply sm:py-4 max-w-none;
   }
   & > div {
-    @apply mx-auto flex max-w-[75rem] items-center justify-between;
+    @apply mx-auto flex flex-col sm:flex-row max-w-[75rem] items-center justify-between;
   }
-  .left > a {
-    @apply text-xs transition-font-size hover:no-underline focus-visible:no-underline sm:text-lg;
+  .left {
+    @apply flex gap-3 transition-spacing;
+    & > a {
+      @apply text-xs transition-font-size hover:no-underline focus-visible:no-underline sm:text-lg;
+    }
+    & > .by-octo {
+      @apply flex justify-center items-center;
+      a {
+        @apply flex gap-2 hover:no-underline focus-visible:no-underline text-gray-600;
+        img {
+          @apply w-4;
+        }
+      }
+    }
   }
   .right {
     & > a {
@@ -17,6 +29,34 @@ header {
       }
       img {
         @apply max-h-6 dark:brightness-84 dark:contrast-84 dark:hue-rotate-145 dark:invert-77 dark:saturate-194 dark:sepia-4 dark:filter;
+      }
+    }
+  }
+  &.dropdown {
+    .left {
+      @apply gap-2 md:gap-3;
+    }
+    & > div {
+      @apply pb-1 flex-row;
+    }
+    a {
+      @apply text-[1.125rem] xs:text-2xs sm:text-xs md:text-lg;
+    }
+    .by-octo {
+      @apply hidden xs:flex;
+      a {
+        @apply gap-[6px] md:gap-2 dark:text-gray-400;
+      }
+      img {
+        @apply max-h-6 dark:brightness-84 dark:contrast-84 dark:hue-rotate-145 dark:invert-77 dark:saturate-194 dark:sepia-4 dark:filter;
+      }
+      span {
+        @apply text-body-sm md:text-body transition-font-size;
+      }
+    }
+    .select {
+      .react-aria-Label {
+        @apply hidden text-body-sm xs:block;
       }
     }
   }

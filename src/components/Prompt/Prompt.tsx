@@ -40,7 +40,9 @@ const Prompt: FC<PromptProps> = ({
           onChange={(e) => setInputValue(e.target.value)}
         />
       </label>
-      <button id="generate-btn">{btnText}</button>
+      <button id="generate-btn" className="button">
+        {btnText}
+      </button>
     </form>
   );
 };
