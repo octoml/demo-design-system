@@ -1,5 +1,5 @@
 .switchback {
-  @apply flex flex-col gap-3 mt-8 m-auto max-w-lg md:flex-row md:gap-6 md:max-w-screen-lg md:px-6;
+  @apply flex flex-col gap-3 mt-8 m-auto max-w-lg md:flex-row md:gap-6 md:mt-16 md:max-w-screen-lg md:px-6;
   & > div {
     @apply w-full;
   }

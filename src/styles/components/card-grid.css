@@ -1,6 +1,6 @@
 .card-grid {
   .heading {
-    @apply text-lg text-center mb-8 sm:text-[2.75rem] sm:mb-11 transition-font-size;
+    @apply text-lg text-center mb-8 sm:text-[2.75rem] sm:mb-11 transition-font-size  md:mb-12 mt-2;
 
     br {
       @apply xs:hidden;
