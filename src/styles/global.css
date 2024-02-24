@@ -68,7 +68,10 @@ main.container {
     }
   }
   &.wide {
-    @apply max-w-[1328px] px-8 xl:px-16;
+    @apply max-w-[1328px] px-8 xl:px-16 flex-grow;
+  }
+  .page-content {
+    @apply my-auto;
   }
 }
 

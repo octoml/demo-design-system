@@ -3,6 +3,12 @@ footer {
   .container {
     @apply m-auto;
   }
+  .credit {
+    @apply mb-4;
+    a {
+      @apply text-gray-600 hover:underline dark:text-gray-400;
+    }
+  }
   nav,
   nav ul {
     @apply flex flex-col;
