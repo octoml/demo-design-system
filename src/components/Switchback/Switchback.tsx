@@ -15,7 +15,7 @@ const Switchback: FC<SwitchbackProps> = ({
 }) => {
   return (
     <div className="switchback">
-      <div className="container">
+      <div className="switchback-container">
         <div>
           {eyebrow && (
             <div className="eyebrow">
