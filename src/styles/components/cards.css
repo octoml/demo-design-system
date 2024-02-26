@@ -3,7 +3,7 @@
 
   &.model-card {
     .icon {
-      @apply h-7 w-7 rounded-full border border-gray-300 p-[3px] dark:border-gray-700  mt-[5px] sm:mt-0 sm:items-center;
+      @apply h-7 w-7 rounded-full border border-gray-300 dark:border-gray-700  mt-[5px] sm:mt-0 sm:items-center;
     }
     &,
     .info {
