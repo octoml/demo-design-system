@@ -1,17 +1,25 @@
 .content-nav {
-  @apply flex gap-y-2 justify-between border-b border-b-gray-200 pb-4 flex-wrap mt-5 sm:flex-nowrap dark:border-b-gray-700;
-  button {
-    @apply flex items-center gap-2 text-gray-500 hover:underline focus-visible:underline px-0 w-2/4 sm:w-auto dark:text-gray-300;
-    &:first-of-type img {
-      @apply rotate-90;
+  @apply flex gap-y-2 justify-between border-b border-b-gray-200 pb-4 flex-wrap mt-5 sm:flex-nowrap dark:border-b-gray-700 sm:grid sm:grid-cols-3;
+
+  .nav-item {
+    a {
+      @apply flex items-center gap-2 text-gray-500 hover:underline focus-visible:underline px-0 sm:w-auto dark:text-gray-300 w-full;
     }
-    &:last-of-type {
-      @apply justify-end;
-      img {
-        @apply -rotate-90;
+    &.prev {
+      a img {
+        @apply rotate-90;
+      }
+    }
+    &.next {
+      a {
+        @apply justify-end;
+        img {
+          @apply -rotate-90;
+        }
       }
     }
   }
+
   .current {
     @apply text-2xs text-center sm:text-xs;
     &.middle {
