@@ -1,9 +1,6 @@
 .not-found {
-  @apply pt-6 flex-grow justify-center;
+  @apply pt-6 flex-grow justify-center items-center;
   .heading {
     @apply text-lg min-[420px]:text-xl transition-font-size xs:text-2xl;
-  }
-  .button {
-    @apply mr-auto;
   }
 }
