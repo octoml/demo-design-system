@@ -1,15 +1,25 @@
 .switchback {
-  @apply flex flex-col gap-3 mt-8 m-auto max-w-lg md:flex-row md:gap-6 md:mt-16 md:max-w-screen-lg md:px-6;
-  & > div {
-    @apply w-full;
-  }
-  .heading {
-    @apply text-lg md:text-[40px] lg:text-xl transition-font-size;
-    br {
-      @apply min-[550px]:hidden md:block;
+  @apply mb-10 mt-1   border-b border-gray-100 pb-10 md:mt-3   md:px-6 md:pb-14 md:mb-14 lg:pb-20 lg:mb-20 dark:border-b-gray-900;
+  .container {
+    @apply m-auto flex max-w-lg flex-col gap-3  items-center  md:flex-row md:gap-6 md:max-w-screen-lg;
+    & > div {
+      @apply w-full;
     }
-  }
-  p {
-    @apply text-gray-700 dark:text-gray-200;
+    .eyebrow {
+      @apply mb-4  flex text-body-sm uppercase tracking-wide text-gray-700 dark:text-gray-400;
+      span {
+        @apply rounded-2xl border border-gray-300 bg-gray-25 px-3 py-1 dark:border-gray-700 dark:bg-gray-900;
+      }
+    }
+
+    .heading {
+      @apply text-lg md:text-[40px] lg:text-xl transition-font-size;
+      br {
+        @apply min-[550px]:hidden md:block;
+      }
+    }
+    p {
+      @apply text-gray-700 dark:text-gray-200;
+    }
   }
 }

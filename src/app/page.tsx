@@ -12,6 +12,25 @@ export default function Home() {
         nextText="Jan 26, 2023"
       />
       <div className="page-content">
+        <Switchback
+          eyebrow="On this day"
+          leftContent={
+            <h2 className="heading">
+              <span>45,515</span> text gen
+              <br /> models existed
+            </h2>
+          }
+          rightContent={
+            <p>
+              We like to say that in AI, a week is a month and a month is a
+              year, and the "latest and greatest model" changes just as quickly.
+              We tracked the most popular text-gen models starting in January
+              2023 to highlight the rapid rate of change in the AI industry.
+              Click through time to see how quickly the state-of-the-art
+              changes.
+            </p>
+          }
+        />
         <CardGrid
           heading={
             <h1>
@@ -81,24 +100,6 @@ export default function Home() {
               externalLink: "https://huggingface.co/mistralai/Mistral-7B-v0.1",
             },
           ]}
-        />
-        <Switchback
-          leftContent={
-            <h2 className="heading">
-              <span>45,515</span> text gen
-              <br /> models existed
-            </h2>
-          }
-          rightContent={
-            <p>
-              We like to say that in AI, a week is a month and a month is a
-              year, and the "latest and greatest model" changes just as quickly.
-              We tracked the most popular text-gen models starting in January
-              2023 to highlight the rapid rate of change in the AI industry.
-              Click through time to see how quickly the state-of-the-art
-              changes.
-            </p>
-          }
         />
       </div>
     </main>
