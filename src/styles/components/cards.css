@@ -17,7 +17,7 @@
     }
     p > span {
       &:first-child {
-        @apply text-gray-600 font-medium dark:text-gray-300 mr-1;
+        @apply text-gray-600 font-medium dark:text-gray-300 mr-1 flex-shrink-0;
       }
       &:last-child {
         @apply text-black-600 font-semibold dark:text-gray-100 sm:ml-1 w-full;
