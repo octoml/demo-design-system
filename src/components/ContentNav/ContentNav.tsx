@@ -20,15 +20,19 @@ const ContentNav: FC<ContentNavProps> = ({
   );
   return (
     <div className="content-nav">
-      <button>
-        {Chevron}
-        {prevText}
-      </button>
+      <div className="nav-item prev">
+        <a href="">
+          {Chevron}
+          <span>{prevText}</span>
+        </a>
+      </div>
       {current && <div className="current middle">{current}</div>}
-      <button>
-        {nextText}
-        {Chevron}
-      </button>
+      <div className="nav-item next">
+        <a href="">
+          <span>{nextText}</span>
+          {Chevron}
+        </a>
+      </div>
       {current && <div className="current bottom">{current}</div>}
     </div>
   );
