@@ -27,9 +27,12 @@ interface SelectProps {
 const Select: FC<SelectProps> = ({ label, listItems }) => (
   <ReactAriaSelect className="select" defaultSelectedKey={"2024"}>
     {label && <Label>{label}</Label>}
-    
+
     <Button>
-      <SelectValue />
+      <span>
+        <span className="mobile-text">Year:</span>
+        <SelectValue />
+      </span>
       <span aria-hidden="true" className="icon">
         <img src="/icons/chevron.svg" />
       </span>

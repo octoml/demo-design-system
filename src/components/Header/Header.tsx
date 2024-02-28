@@ -14,10 +14,10 @@ const Header = () => {
             >
               <span>by</span>
               <Image
-                src="/icons/octo.svg"
+                src="/images/octo_logo.svg"
                 alt="OctoAI Icon"
-                width="22"
-                height="24"
+                fill
+                objectFit="contain"
               />
             </a>
           </div>

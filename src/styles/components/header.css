@@ -34,27 +34,36 @@ header {
   }
   &.dropdown {
     .left {
-      @apply gap-2 md:gap-3;
+      @apply gap-2 md:gap-3 justify-between w-full xs:w-auto xs:justify-start;
+    }
+    .right {
+      @apply w-full xs:w-auto;
     }
     & > div {
-      @apply pb-1 flex-row;
+      @apply pb-1 flex-col gap-2 xs:flex-row;
     }
     a {
-      @apply text-[1.125rem] xs:text-2xs sm:text-xs md:text-lg;
+      @apply text-[1.125rem] xs:text-2xs sm:text-xs md:text-md;
     }
     .by-octo {
-      @apply hidden xs:flex;
       a {
         @apply gap-[6px] md:gap-2 dark:text-gray-400;
       }
       img {
-        @apply max-h-6 dark:brightness-84 dark:contrast-84 dark:hue-rotate-145 dark:invert-77 dark:saturate-194 dark:sepia-4 dark:filter;
+        @apply !relative max-h-[18px] dark:brightness-84 dark:contrast-84 dark:hue-rotate-145 dark:invert-77 dark:saturate-194 dark:sepia-4 dark:filter m-auto;
       }
       span {
         @apply text-body-sm md:text-body transition-font-size;
       }
     }
     .select {
+      &,
+      button {
+        @apply w-full text-center grid grid-cols-select xs:flex xs:w-[100px];
+        .mobile-text {
+          @apply inline-block mr-1 text-gray-500 xs:hidden dark:text-gray-300;
+        }
+      }
       .react-aria-Label {
         @apply hidden text-body-sm xs:block;
       }

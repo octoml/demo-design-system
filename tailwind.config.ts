@@ -96,6 +96,9 @@ const theme: Config = {
         "84": "84",
         "86": ".86",
       },
+      gridTemplateColumns: {
+        select: "1fr 12px",
+      },
     },
     colors: {
       transparent: "transparent",
