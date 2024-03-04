@@ -59,7 +59,7 @@ header {
     .select {
       &,
       button {
-        @apply w-full text-center grid grid-cols-select xs:flex xs:w-[100px];
+        @apply w-full text-center grid grid-cols-select xs:flex xs:min-w-[90px] sm:min-w-[100px] transition-sizing;
         .mobile-text {
           @apply inline-block mr-1 text-gray-500 xs:hidden dark:text-gray-300;
         }

@@ -4,7 +4,7 @@
     @apply font-normal text-gray-600 dark:text-gray-50;
   }
   & > button {
-    @apply flex w-[100px] items-center justify-between gap-3 rounded border border-gray-300  bg-gray-50 shadow-light dark:border-gray-600 dark:bg-opacity-5 dark:text-white dark:shadow-dark px-2 py-1;
+    @apply flex w-full items-center justify-between gap-3 rounded border border-gray-300  bg-gray-50 shadow-light dark:border-gray-600 dark:bg-opacity-5 dark:text-white dark:shadow-dark px-2 py-1;
     &[data-hovered],
     &[data-focused] {
       @apply border-gray-500 bg-gray-50  dark:border-gray-300 dark:bg-opacity-5 outline-0;
