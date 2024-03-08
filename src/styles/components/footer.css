@@ -28,8 +28,18 @@ footer {
       @apply text-gray-600 dark:text-gray-400;
     }
     li {
+      &.with-icon a,
+      &.only-icons {
+        @apply flex items-center justify-center;
+      }
       &.with-icon a {
-        @apply flex items-center justify-center gap-2;
+        @apply gap-2;
+      }
+      &.only-icons {
+        @apply gap-7;
+      }
+      &.only-icons a {
+        @apply -m-4 p-4;
       }
       &.multilink {
         @apply flex flex-nowrap gap-1 m-auto;
